@@ -22,19 +22,21 @@ window.onresize = ()=>{
 
 //MODO CLARO E ESCURO
 nightday.onclick = () =>{
-    if(imgnightday.src === "http://127.0.0.1:5500/img/sun_7218604.png"){
+    console.log("clique")
+    if(imgnightday.ariaChecked === "true"){
         imgnightday.src = "./img/moon_560897.png"
         main.classList.add ("color-darkMode")
         main.classList.remove ("color-lightMode")
+        imgnightday.ariaChecked = "false"
         // foto.src = "./img/novoEuLight.svg"
     }else{
+        imgnightday.ariaChecked = "true"
         imgnightday.src = "./img/sun_7218604.png"
         main.classList.add ("color-lightMode")
         main.classList.remove ("color-darkMode")
         // foto.src = "./img/novoEu2.svg"
         
     }
-    // <img id="imgNightDay" src="./img/moon_560897.png" alt="">
 }
 
 //criando novos projetos
