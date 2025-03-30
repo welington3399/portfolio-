@@ -1,0 +1,65 @@
+:root{
+    --background-body:#F0F0F0;
+    --background-itens: #FFFFFF;
+    --color-text: #000000;
+    --background-skills: rgb(255, 255, 255);
+    --background-text-skills: rgb(0, 0, 0);
+    --transition-time: 0.5s;
+    --translate-direction: 0px;
+    --color-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --color-dayNight: #DEB887;
+    --color-box: #ffffff;
+}
+
+.color-darkMode{
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    transition: 0.5s; */
+    --color-box: #242526;
+    --color-dayNight: #5f9ea0;
+    --background-body:#18191A;
+    --background-itens: #242526;
+    --color-text: #FFFFFF;
+    --background-skills: rgb(0, 0, 0);
+    --background-text-skills: rgb(255, 255, 255);
+    --color-shadow: rgba(0, 0, 0, 0.843) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --translate-direction: 59px;
+}
+
+.color-lightMode{
+    /* background-color: white;
+    color: rgb(22, 22, 22);
+    transition: 0.5s; */
+    --color-box: #FFFFFF;
+    --color-dayNight: #DEB887;
+    --color-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    --background-body:#F0F0F0;
+    --background-itens: #FFFFFF;
+    --color-text: #000000;
+    --background-skills: rgb(255, 255, 255);
+    --background-text-skills: rgb(0, 0, 0);
+    --translate-direction: 0px;
+}
+
+/* .button-darkMode{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    transition: 0.5s;
+}
+
+.button-lightMode{
+    background-color: white;
+    color: rgb(22, 22, 22);
+    transition: 0.5s;
+}
+
+.trasitionNight{
+    --transition-time: 0.5s;
+    --translate-direction: 59px;
+}
+.trasitionDay{
+    --transition-time: 0.5s;
+    --translate-direction: 0px;
+} 
+    */

@@ -1,0 +1,37 @@
+#sobre{
+    margin: 5%;
+    height: 100vh;
+    /* background-color: #16A47C; */
+    padding-top: 8%;
+}
+
+.box{
+    background-color: var(--color-box);
+    margin: auto;
+    top: 50%;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.img-box{
+    text-align: center;
+    width: 200px;
+    border-radius: 15px;
+    margin: 15px auto;
+    box-shadow: rgb(0 56 119) 0px 0px 0px 3px, rgb(0 62 131) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.texto-sobre{
+    margin:  10px auto !important;
+    width: 80%;
+}

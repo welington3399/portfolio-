@@ -1,0 +1,51 @@
+#projetos{
+    min-height: 100vh;
+}
+
+.box-project{
+    background-color: var(--color-box);
+    width: 350px;
+    height: 530px;
+    border: 1px solid rgba(0, 0, 0, 0.15) ;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-img-project{
+    height: 60%;
+    object-fit: cover;
+    width: inherit;
+    border-radius: 5px;
+}
+
+.box-text-project p {
+    font-size: 1.1em;
+}
+
+.grid-project{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    size: 100vh;
+    margin: auto;
+}
+
+.bot-proj{
+    font-size: 1.3rem;
+    font-style: italic;
+    text-decoration: none;
+    bottom: 10px;
+    position: absolute;
+    color: #F9C61B;
+    font-weight: bold;
+}
+
+/* .caixa-projeto img{
+    overflow: hidden;
+    height: 60%;
+    
+    } */
+
