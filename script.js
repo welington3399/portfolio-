@@ -39,6 +39,28 @@ nightday.onclick = () =>{
     }
 }
 
+//criando habilidades
+let habilidades = document.querySelector(".geral")
+var variaveis = document.getElementById("variaveis")
+function hab(name,tam,t){
+    habilidades.innerHTML +=
+                    `
+                    <div class="org-progress-bar">
+                        <p>${name}</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: ${tam};" data-content="${t}"></div>
+                        </div>
+                    </div>
+                    `
+}
+hab("CSS", "70%","70%")
+hab("JavaScript", "50%","50%")
+hab("python", "15%","15%")
+hab("Banco de Dados", "30%","30%")
+hab("Node JS", "20%","5%")
+hab("UI/UX", "50%","50%")
+
+
 //criando novos projetos
 let grid = document.querySelector("#projetos") 
 let project = document.querySelector(".grid-project")
@@ -54,17 +76,16 @@ let adicionar = (img, titulo, descrição, link)=>{
                             <h4>${titulo}</h4>
                         <p> ${descrição}</p>
                         </div>
-                        <a class="bot-proj" href="${link}">Saiba mais</a>
+                        <a class="bot-proj" href="${link}" target="_blank">Saiba mais</a>
                     </div>
         `
     
 }
 
 adicionar("proj_churrascometro", "Churrascometro", "Churrascometro é uma ferramenta que irá auxiliar você a saber o que precisa para um churrasco, baseado na quantidade de pessoas e tempo de churrasco.")
-adicionar("portifolioIMG", "Portifolio", "Aqui é onde você vai conhecer um pouco sobre mim, minhas habilidades e alguns projetos, tanto praticos quanto reais.")
-adicionar("novaBrasiliaIMG", "Nova Brasília", "Landing Page real feita para uma empresa que presta atividades de terceirização de serviços condominais.")
+adicionar("portifolioIMG", "Portifolio", "Aqui é onde você vai conhecer um pouco sobre mim, minhas habilidades e alguns projetos, tanto praticos quanto reais.","#")
+adicionar("novaBrasiliaIMG", "Nova Brasília", "Landing Page real feita para uma empresa que presta atividades de terceirização de serviços condominais.","https://welington3399.github.io/Nova-Brasilia-servicos/")
 
-// adicionar(img2.style.background = "url(../img/churrascomentroIMG.png)" , "curriculo", "teste teste teste")
 
 
 

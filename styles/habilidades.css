@@ -2,45 +2,119 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
+    margin: 5%;
+
 }
 
 .geral{
-    position: relative;
+    margin: auto;
+    background-color: var(--color-box);
+    min-height: 60%;
+    width: 60%;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.org-progress-bar{
+    margin:15px auto;
     display: flex;
+    flex-direction: column;
+
+}
+
+.org-progress-bar p{
+   margin-left: 3%;
+   font-size: 19px;
+   font-weight: 700;
+}
+
+.progress-bar{
+    width: 95%;
+    height: 8px;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
+    margin: 10px auto;
+    background-color: #5f9ea0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.card{
+.progress{
     position: relative;
-    width: 320px;
-    height: 350px;
-    background: #2a2a2a;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.percent{
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-svg{
-    position: relative;
-    width: 250px;
-    height: 250px;
-}
-
-circle{
-    width: 100%;
     height: 100%;
-    fill: transparent;
-    stroke-width: 2;
-    stroke: #191919;
-    transform: translate(5px, 5px);
+    width: var(--tam);
+    background-image: linear-gradient(to right, #f9c51b85 ,#F9C61B);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    animation: move 2s forwards;
+    animation-delay: 1s;
 }
+.progress::after{
+    display: flex;
+    position: absolute;
+    bottom: 6px;
+    left: 99%;
+    content: "";
+    padding: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    border: 5px solid #F9C61B;
+    background-color: var(--color-box);
+}
+#variaveis{
+    --porcentagem: ;
+    --tam: ;
+}
+.progress::before{
+    content: attr(data-content);
+    position: absolute;
+    left: 99%;
+    bottom: 20px;
+    color: var(--color-text);
+    animation: porcent 5s ease-in-out ;
+}
+
+@keyframes move{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: '';
+    }
+}
+
+@keyframes porcent{
+    0%{
+        opacity:0% ;
+    }50%{
+        opacity:0%;
+    }
+    80%{
+        opacity:100%;
+    }90%{
+        opacity:0%;
+    }
+    100%{
+        opacity:100%;
+    }
+
+}
+
+
+
+
+
+.item::before {
+    content: var(--before-content);
+    color: teal;
+    margin-right: 8px;
+  }
+
+  .item {
+    font-weight: bold;
+    margin: 5px 0;
+  }
